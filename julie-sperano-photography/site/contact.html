@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact & Inquiries | Julie Sperano Photography, Canandaigua, NY</title>
+  <meta name="description" content="Inquire about a portrait, couples, dog, pet, animal or outdoor photography session with Julie Sperano in Canandaigua and the Finger Lakes, New York.">
+  <link rel="canonical" href="https://juliesperano.com/contact.html">
+  <meta name="theme-color" content="#f6f1e8">
+
+  <!-- Link previews (Facebook, iMessage, LinkedIn, X) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Julie Sperano Photography">
+  <meta property="og:title" content="Contact & Inquiries | Julie Sperano Photography, Canandaigua, NY">
+  <meta property="og:description" content="Inquire about a portrait, couples, dog, pet, animal or outdoor photography session with Julie Sperano in Canandaigua and the Finger Lakes, New York.">
+  <meta property="og:url" content="https://juliesperano.com/contact.html">
+  <meta property="og:image" content="https://juliesperano.com/images/social/share.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Julie Sperano Photography, Canandaigua and the Finger Lakes, New York">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="icon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preload" href="assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/hanken-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ SITE HEADER (identical on every page) ============ -->
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="wordmark" href="index.html" aria-label="Julie Sperano Photography, home">
+      <span class="wordmark__name">Julie Sperano</span>
+      <span class="wordmark__sub">Photography</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle__label">Menu</span><span class="nav-toggle__bars" aria-hidden="true"></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li><a class="nav-inquire" href="contact.html" aria-current="page">Book an inquiry</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- ============ END SITE HEADER ============ -->
+
+<main id="main">
+
+  <section class="page-intro" aria-labelledby="page-title">
+    <div class="wrap grid">
+      <span class="kicker kicker--rose" style="grid-column:1/-1">Contact</span>
+      <h1 class="page-intro__title" id="page-title">Say <em>hello.</em></h1>
+      <p class="page-intro__meta kicker">Every inquiry is read by Julie.</p>
+      <p class="page-intro__text">Tell me who you&rsquo;d like photographed, roughly when, and where. Don&rsquo;t worry about having it all figured out; that&rsquo;s what the conversation is for.</p>
+    </div>
+  </section>
+
+  <section class="section section--tight" aria-label="Inquiry form and contact details">
+    <div class="wrap grid">
+      <div class="contact-form">
+        <!-- This form is handled by Netlify Forms. See README, section "The contact form". -->
+        <form name="inquiry" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field" data-inquiry-form data-fallback-email="[Insert email address]" novalidate>
+          <input type="hidden" name="form-name" value="inquiry">
+          <p class="hp-field" aria-hidden="true"><label>Leave this empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+
+          <div class="form-grid">
+            <div class="field field--half">
+              <label for="inquiry-name">Your name</label>
+              <input id="inquiry-name" name="name" type="text" autocomplete="name" required data-required="Please tell me your name." aria-describedby="inquiry-name-error">
+              <p class="field__error" id="inquiry-name-error"></p>
+            </div>
+            <div class="field field--half">
+              <label for="inquiry-email">Email address</label>
+              <input id="inquiry-email" name="email" type="email" autocomplete="email" required data-required="Please add your email so I can reply." aria-describedby="inquiry-email-error">
+              <p class="field__error" id="inquiry-email-error"></p>
+            </div>
+            <div class="field field--half">
+              <label for="inquiry-phone">Phone <span class="optional">(optional)</span></label>
+              <input id="inquiry-phone" name="phone" type="tel" autocomplete="tel">
+            </div>
+            <div class="field field--half">
+              <label for="inquiry-type">Type of photography</label>
+              <select id="inquiry-type" name="session_type" required data-required="Please choose the closest option." aria-describedby="inquiry-type-error">
+                <option value="">Choose one</option>
+              <option data-key="portraits" value="Portraits & family">Portraits &amp; family</option>
+              <option data-key="couples" value="Couples">Couples</option>
+              <option data-key="dogs" value="Dogs & pets">Dogs &amp; pets</option>
+              <option data-key="animals" value="Other animals">Other animals</option>
+              <option data-key="outdoors" value="Outdoor & nature">Outdoor &amp; nature</option>
+              <option data-key="custom" value="Something else / custom">Something else / custom</option>
+              </select>
+              <p class="field__error" id="inquiry-type-error"></p>
+            </div>
+            <div class="field field--half">
+              <label for="inquiry-date">Preferred date or timeframe</label>
+              <input id="inquiry-date" name="date_or_timeframe" type="text" placeholder="e.g. a weekend in early October">
+            </div>
+            <div class="field field--half">
+              <label for="inquiry-location">Location or travel details</label>
+              <input id="inquiry-location" name="location" type="text" placeholder="e.g. our farm near Naples, NY">
+            </div>
+            <div class="field">
+              <label for="inquiry-message">Tell me about it</label>
+              <textarea id="inquiry-message" name="message" required data-required="A sentence or two is plenty." aria-describedby="inquiry-message-error inquiry-message-hint"></textarea>
+              <p class="field__hint" id="inquiry-message-hint">Who&rsquo;s involved (people and animals), what the photographs are for, anything I should know.</p>
+              <p class="field__error" id="inquiry-message-error"></p>
+            </div>
+            <div class="field">
+              <div class="check">
+                <input id="inquiry-consent" name="consent" type="checkbox" value="yes" required aria-describedby="inquiry-consent-error">
+                <label for="inquiry-consent">I&rsquo;m happy for Julie Sperano Photography to keep the details I&rsquo;ve shared in order to reply to my inquiry, as described in the <a href="privacy.html">privacy policy</a>.</label>
+              </div>
+              <p class="field__error" id="inquiry-consent-error"></p>
+            </div>
+          </div>
+
+          <button class="button" type="submit">Send inquiry</button>
+          <div class="form-status" id="form-status" role="status" aria-live="polite" tabindex="-1" hidden></div>
+        </form>
+      </div>
+
+      <aside class="contact-aside" aria-label="Contact details">
+        <figure class="frame ">
+      <div class="frame__img r-1x1"><img src="images/portfolio/dogs-04.jpg" alt="Placeholder for a square dog photograph" width="1400" height="1400" loading="lazy" decoding="async"></div>
+    </figure>
+        <dl>
+          <div><dt>Email</dt><dd><span class="ph">[Insert email address]</span></dd></div>
+          <div><dt>Phone</dt><dd><span class="ph">[Insert phone number, or delete]</span></dd></div>
+          <div><dt>Based in</dt><dd>Canandaigua, New York</dd></div>
+          <div><dt>Photographing</dt><dd>Canandaigua, the Finger Lakes region, and further afield by arrangement</dd></div>
+          <div><dt>Replies</dt><dd><span class="ph">[Insert typical reply time, e.g. within two working days]</span></dd></div>
+          <div><dt>Follow</dt><dd><span class="ph">[Instagram link]</span> &nbsp; <span class="ph">[Facebook link]</span></dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ SITE FOOTER (identical on every page) ============ -->
+<footer class="site-footer">
+  <div class="wrap grid">
+    <div class="footer-mark">
+      Julie Sperano <em>Photography</em>
+      <p>People, dogs and other animals, and the outdoors. Based in Canandaigua, New York, photographing across the Finger Lakes and beyond.</p>
+    </div>
+    <div class="footer-col">
+      <h2>Explore</h2>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+      <h2>Contact</h2>
+      <ul>
+        <li><span class="ph">[Insert email address]</span></li>
+        <li><span class="ph">[Insert phone number, or delete this line]</span></li>
+        <li><a href="contact.html">Inquiry form</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h2>Follow</h2>
+      <ul>
+        <li><span class="ph">[Instagram link]</span></li>
+        <li><span class="ph">[Facebook link]</span></li>
+      </ul>
+    </div>
+    <div class="footer-base">
+      <span>&copy; <span data-year>2026</span> Julie Sperano Photography. Photographs may not be used without permission.</span>
+      <span><a href="privacy.html">Privacy policy</a> &nbsp;·&nbsp; Canandaigua, NY</span>
+    </div>
+  </div>
+</footer>
+<!-- ============ END SITE FOOTER ============ -->
+
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>
